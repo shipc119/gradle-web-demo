@@ -1,0 +1,11 @@
+dependencies {
+    compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+    compile group: 'io.swagger', name: 'swagger-jersey2-jaxrs', version: '1.5.21'
+    compile group: 'io.swagger', name: 'swagger-models', version: '1.5.21'
+    compile group: 'io.swagger', name: 'swagger-annotations', version: '1.5.21'
+//    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: "${springBootVersion}"
+//    // https://mvnrepository.com/artifact/org.springframework/spring-dao
+//    compile group: 'org.springframework', name: 'spring-dao', version: '2.0.8'
+
+}

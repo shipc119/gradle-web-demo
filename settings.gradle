@@ -1,0 +1,12 @@
+pluginManagement {
+	repositories {
+		gradlePluginPortal()
+	}
+}
+rootProject.name = 'demo'
+include 'demo-admin'
+include 'demo-common'
+include 'demo-sys'
+include 'demo-swagger'
+include 'demo-logback'
+
