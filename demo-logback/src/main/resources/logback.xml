@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration debug="true" scan="true" scanPeriod="1 seconds">
     <!--  定义日志文件的存储地址，勿在logback配置文件中使用相对路径  -->
-    <property name="LOG_HOME" value="/log"/>
+    <property name="LOG_HOME" value="log"/>
 
     <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
         <!--  定义一个过滤器，在level之下的日志输出不会被打印出来  -->
@@ -38,18 +38,18 @@
     </appender>
 
     <!--日志异步到数据库-->
-    <appender name="db" class="ch.qos.logback.classic.db.DBAppender">
-        <!--日志异步数据库-->
-        <connectionSource class="ch.qos.logback.core.db.DriverManagerConnectionSource">
-            <!--连接池-->
-            <dataSource class="com.alibaba.druid.pool.DruidDataSource">
-                <driverClass>com.mysql.jdbc.Driver</driverClass>
-                <url>jdbc:mysql://localhost:3306/databaseName</url>
-                <user>root</user>
-                <password>root</password>
-            </dataSource>
-        </connectionSource>
-    </appender>
+<!--    <appender name="db" class="ch.qos.logback.classic.db.DBAppender">-->
+<!--        &lt;!&ndash;日志异步数据库&ndash;&gt;-->
+<!--        <connectionSource class="ch.qos.logback.core.db.DriverManagerConnectionSource">-->
+<!--            &lt;!&ndash;连接池&ndash;&gt;-->
+<!--            <dataSource class="com.alibaba.druid.pool.DruidDataSource">-->
+<!--                <driverClass>com.mysql.jdbc.Driver</driverClass>-->
+<!--                <url>jdbc:mysql://localhost:3306/databaseName</url>-->
+<!--                <user>root</user>-->
+<!--                <password>root</password>-->
+<!--            </dataSource>-->
+<!--        </connectionSource>-->
+<!--    </appender>-->
 
 
     <!--  root是默认的logger，这里设定暑促级别为DEBUG  -->

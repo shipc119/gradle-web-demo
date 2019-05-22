@@ -5,7 +5,7 @@ gradle
 !gradle/wrapper/gradle-wrapper.jar
 gradlew
 gradlew.bat
-
+log/
 ### STS ###
 .apt_generated
 .classpath
